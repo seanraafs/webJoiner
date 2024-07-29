@@ -1,0 +1,395 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/output.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar fixed top-0 left-0 right-0 z-50 bg-slate-200 shadow-lg">
+        <div class="navbar justify-between">
+            <a class="btn btn-ghost text-xl">fXs-Bot</a>
+            <div class="navbar-end">
+                <div class="dropdown dropdown-end ">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-compact dropdown-content bg-slate-200 rounded-md p-2">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#product">Product</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+            <!-- navbar large -->
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#product">Product</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <!-- navbar large -->
+            <div class="navbar-end gap-3 hidden lg:flex">
+                <button class="btn btn-primary hover:bg-blue-800" onclick="my_modal_1.showModal()">Login</button>
+                <dialog id="my_modal_1" class="modal">
+                    <div class="modal-box">
+                        <p class="py-4">This Feature Coming Soon!</p>
+                        <div class="modal-action">
+                            <form method="dialog">
+                                <!-- if there is a button in form, it will close the modal -->
+                                <button class="btn">Close</button>
+                            </form>
+                        </div>
+                    </div>
+                </dialog>
+                <button class="btn bg-purple-600 text-white hover:bg-purple-700"
+                    onclick="my_modal_2.showModal()">Register</button>
+                <dialog id="my_modal_2" class="modal">
+                    <div class="modal-box">
+                        <p class="py-4">This Feature Coming Soon!</p>
+                        <div class="modal-action">
+                            <form method="dialog">
+                                <!-- if there is a button in form, it will close the modal -->
+                                <button class="btn">Close</button>
+                            </form>
+                        </div>
+                    </div>
+                </dialog>
+                <!-- <a class="btn btn-primary hover:bg-blue-800">Login</a>
+                <a class="btn bg-purple-600 text-white hover:bg-purple-700">Register</a> -->
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen">
+        <div class="hero bg-base-200 min-h-screen max-sm:pt-20">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+                <img src="./assets/img/logo.jpg" width="250" style="border-radius: 100%;"
+                    class="max-w-sm rounded-lg shadow-2xl" />
+                <div>
+                    <h1 class="text-5xl font-bold">Welcome to fXs-Bot</h1>
+                    <p class="py-6">
+                        Best Spamming & Joiner Services for Discord Maximize your Discord server with fXs-bot. Our
+                        advanced tools provide efficient, fast and secure spamming and joiner services. Join now and
+                        feel the difference!
+                    </p>
+                    <a class="btn btn-primary" href="#product">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- About Section -->
+    <section id="about" class="min-h-screen flex flex-col items-center py-36">
+        <h2 class="text-4xl font-bold mb-8 text-black">About fXs-Bot</h2>
+        <p class="text-lg text-start max-w-4xl text-black-200 p-4 mb-20">
+            fXs-Bot is your go-to solution for enhancing your Discord server's engagement and efficiency. Our
+            innovative tools are designed to streamline the process of spamming and joining Discord servers,
+            ensuring that you get the most out of your community management efforts. With a focus on security and
+            performance, fXs-Bot offers reliable and rapid services tailored to meet your needs. Our team is
+            dedicated to providing top-notch support and constantly improving our features to keep up with the
+            latest trends and requirements in the Discord ecosystem.
+        </p>
+        <div class="flex flex-wrap justify-center gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-lg w-full md:w-1/3">
+                <h3 class="text-xl font-semibold mb-4">Why Choose Us?</h3>
+                <p class="text-md">
+                    We offer a unique blend of reliability, speed, and security. Our tools are built with user
+                    satisfaction in mind, ensuring seamless integration and optimal performance for your Discord
+                    server.
+                </p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg w-full md:w-1/3">
+                <h3 class="text-xl font-semibold mb-4">Our Commitment</h3>
+                <p class="text-md">
+                    At fXs-Bot, we are committed to providing exceptional service and continuous improvement. Our
+                    dedicated team works tirelessly to enhance our tools and offer the best possible experience for
+                    our users.
+                </p>
+            </div>
+        </div>
+        <!-- stats -->
+        <div class="stats stats-vertical lg:stats-horizontal shadow mt-5">
+            <div class="stat">
+                <div class="stat-title">Downloads</div>
+                <div class="stat-value">31K</div>
+                <div class="stat-desc">Jan 1st - Feb 1st</div>
+            </div>
+
+            <div class="stat">
+                <div class="stat-title">New Users</div>
+                <div class="stat-value">4,200</div>
+                <div class="stat-desc">↗︎ 400 (22%)</div>
+            </div>
+
+            <div class="stat">
+                <div class="stat-title">New Registers</div>
+                <div class="stat-value">1,200</div>
+                <div class="stat-desc">↘︎ 90 (14%)</div>
+            </div>
+        </div>
+        <!-- <div class="stats shadow-md mt-16">
+            <div class="stat">
+                <div class="stat-figure text-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        class="inline-block h-8 w-8 stroke-current">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="stat-title">Total Likes</div>
+                <div class="stat-value text-primary">25.6K</div>
+                <div class="stat-desc">21% more than last month</div>
+            </div>
+            <div class="stat">
+                <div class="stat-figure text-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        class="inline-block h-8 w-8 stroke-current">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                    </svg>
+                </div>
+                <div class="stat-title">Page Views</div>
+                <div class="stat-value text-secondary countdown">2.6M</div>
+                
+                <div class="stat-desc">21% more than last month</div>
+            </div>
+
+            <div class="stat">
+                <div class="stat-figure text-secondary">
+                    <div class="avatar online">
+                        <div class="w-16 rounded-full">
+                            <img src="./assets/img/logo.jpg" />
+                        </div>
+                    </div>
+                </div>
+                <div class="stat-value">86%</div>
+                <div class="stat-title">Tasks done</div>
+                <div class="stat-desc text-secondary">31 tasks remaining</div>
+            </div>
+        </div> -->
+    </section>
+    <!-- About Section End -->
+
+    <!-- Product Section -->
+    <section id="product" class="bg-base-200 min-h-screen py-32">
+        <h2 class="text-4xl flex font-bold mb-10 justify-center text-black">Products</h2>
+        <div class="flex gap-4 justify-center flex-wrap">
+            <div class="card card-compact bg-base-100 w-96 shadow-xl">
+                <figure>
+                    <img src="./assets/img/servers.jpg" alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">Server Spamming</h2>
+                    <p>Maximize Your Server's Visibility and Engagement with Efficient Spamming Services!</p>
+                    <div class="card-actions justify-end">
+                        <button class="btn btn-primary hover:bg-blue-800" onclick="my_modal_3.showModal()">Buy
+                            Now</button>
+                        <dialog id="my_modal_3" class="modal">
+                            <div class="modal-box">
+                                <p class="py-4">This Feature Coming Soon!</p>
+                                <div class="modal-action">
+                                    <form method="dialog">
+                                        <!-- if there is a button in form, it will close the modal -->
+                                        <button class="btn">Close</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </dialog>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-compact bg-base-100 w-96 shadow-xl">
+                <figure>
+                    <img src="./assets/img/servers.jpg" alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">Server Spamming</h2>
+                    <p>Maximize Your Server's Visibility and Engagement with Efficient Spamming Services!</p>
+                    <div class="card-actions justify-end">
+                        <button class="btn btn-primary hover:bg-blue-800" onclick="my_modal_4.showModal()">Buy
+                            Now</button>
+                        <dialog id="my_modal_4" class="modal">
+                            <div class="modal-box">
+                                <p class="py-4">This Feature Coming Soon!</p>
+                                <div class="modal-action">
+                                    <form method="dialog">
+                                        <!-- if there is a button in form, it will close the modal -->
+                                        <button class="btn">Close</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </dialog>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-compact bg-base-100 w-96 shadow-xl">
+                <figure>
+                    <img src="./assets/img/servers.jpg" alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">Server Spamming</h2>
+                    <p>Maximize Your Server's Visibility and Engagement with Efficient Spamming Services!</p>
+                    <div class="card-actions justify-end">
+                        <button class="btn btn-primary hover:bg-blue-800" onclick="my_modal_5.showModal()">Buy
+                            Now</button>
+                        <dialog id="my_modal_5" class="modal">
+                            <div class="modal-box">
+                                <p class="py-4">This Feature Coming Soon!</p>
+                                <div class="modal-action">
+                                    <form method="dialog">
+                                        <!-- if there is a button in form, it will close the modal -->
+                                        <button class="btn">Close</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </dialog>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Product Section End -->
+
+    <!-- FAQ Section -->
+    <section id="faq" class="min-h-screen">
+        <div class="container mx-auto w-full ">
+            <h1 class="text-5xl font-bold text-center mx-auto py-32">FAQ</h1>
+            <div class="collapse collapse-arrow border-base-300 bg-base-200 border">
+                <input type="checkbox" class="peer" />
+                <div class="collapse-title text-xl font-medium">What is fXs-Bot and what services does it offer?</div>
+                <div class="collapse-content">
+                    <p> fXs-Bot provides advanced tools for spamming and joining Discord servers. Our services are
+                        designed to enhance your server's engagement and efficiency, offering reliable, secure, and fast
+                        solutions to meet your needs.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow border-base-300 bg-base-200 border">
+                <input type="checkbox" class="peer" />
+                <div class="collapse-title text-xl font-medium"> How can I get started with fXs-Bot?</div>
+                <div class="collapse-content">
+                    <p>To get started, simply visit our <a href="#product" class="text-blue-500 underline">Product</a>
+                        page to learn more about our offerings and choose the service that best suits your needs. You
+                        can then follow the instructions to set up and integrate fXs-Bot with your Discord server.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow border-base-300 bg-base-200 border">
+                <input type="checkbox" class="peer" />
+                <div class="collapse-title text-xl font-medium"> Is fXs-Bot safe to use?</div>
+                <div class="collapse-content">
+                    <p>Yes, fXs-Bot is designed with security as a top priority. We follow best practices to ensure that
+                        our tools operate safely and effectively. However, we recommend using our services responsibly
+                        and in accordance with Discord's terms of service.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow border-base-300 bg-base-200 border">
+                <input type="checkbox" class="peer" />
+                <div class="collapse-title text-xl font-medium"> What should I do if I encounter issues with fXs-Bot?
+                </div>
+                <div class="collapse-content">
+                    <p>If you encounter any issues, please reach out to our support team through the <a href="#contact"
+                            class="text-blue-500 underline">Contact</a> page. We are here to help and will do our best
+                        to resolve any problems as quickly as possible.</p>
+                </div>
+            </div>
+    </section>
+    <!-- FAQ Section End -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="min-h-screen bg-slate-100 py-32">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-8 text-center">Contact Us</h2>
+            <div class="max-w-2xl mx-auto">
+                <form action="/send-message" method="POST" class="bg-white p-8 rounded-lg shadow-lg">
+                    <div class="mb-4">
+                        <label for="name" class="block text-lg font-medium mb-2">Name</label>
+                        <input type="text" id="name" name="name" required
+                            class="w-full p-3 border border-gray-300 rounded-md" />
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-lg font-medium mb-2">Email</label>
+                        <input type="email" id="email" name="email" required
+                            class="w-full p-3 border border-gray-300 rounded-md" />
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block text-lg font-medium mb-2">Message</label>
+                        <textarea id="message" name="message" rows="6" required
+                            class="w-full p-3 border border-gray-300 rounded-md"></textarea>
+                    </div>
+                    <button type="submit"
+                        class="btn btn-primary w-full py-3 text-white bg-blue-600 hover:bg-blue-700 rounded-md">Send
+                        Message</button>
+                </form>
+                <div class="mt-12 text-center">
+                    <h3 class="text-xl font-semibold mb-4">Or Reach Us At:</h3>
+                    <p class="text-lg mb-2">
+                        <strong>Email:</strong> <a href="mailto:seanraafs@gmail.com"
+                            class="text-blue-500 underline">seanraafs@gmail.com</a>
+                    </p>
+                    <p class="text-lg">
+                        <strong>Phone:</strong> +1 (234) 567-890
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer Section -->
+    <section class="w-full">
+        <div class="bg-slate-600 ">
+            <footer class="footer text-white p-10 ">
+                <aside>
+                    <img src="/assets/img/logo.jpg" width="60" alt="">
+                    <p>
+                        fXs-Bot
+                        <br />
+                        Providing reliable tech since 2024
+                    </p>
+                </aside>
+                <nav class="text-white">
+                    <h6 class="footer-title">Services</h6>
+                    <a class="link link-hover">Joiner</a>
+                    <a class="link link-hover">Spamming</a>
+                    <a class="link link-hover">Raider</a>
+                </nav>
+                <nav class="text-white">
+                    <h6 class="footer-title">Company</h6>
+                    <a class="link link-hover">Home</a>
+                    <a class="link link-hover">About</a>
+                    <a class="link link-hover">Product</a>
+                    <a class="link link-hover">Contact</a>
+                    <a class="link link-hover">FAQ</a>
+                </nav>
+                <nav class="text-white">
+                    <h6 class="footer-title">Legal</h6>
+                    <a class="link link-hover">Terms of use</a>
+                    <a class="link link-hover">Privacy policy</a>
+                    <a class="link link-hover">Cookie policy</a>
+                </nav>
+            </footer>
+        </div>
+    </section>
+    <!-- Footer Section End -->
+    <script src="script.js"></script>
+</body>
+
+</html>
